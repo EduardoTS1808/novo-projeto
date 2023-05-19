@@ -1,0 +1,14 @@
+
+$color-font: #55f;
+$font-defaoult:Arial, Helvetica, sans-serif;
+
+.title{
+    
+    color: $color-font;
+    font-family: $font-defaoult;
+}
+.container{
+    background-color: aqua;
+    margin: 20px;
+    border: 5px solid #e8e8e8;
+}
