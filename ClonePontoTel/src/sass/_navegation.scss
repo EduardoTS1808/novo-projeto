@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+    .logo{
+        font-size: 3em;
+    }
+
+    .navbar{
+       display: flex;
+       .btnMenu{
+        display: none;
+       }
+        .navbar__list{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            text-decoration: none;
+                .navbar__link{
+                    display: flex;
+                    .navbar__link__a{
+                        padding: 20px 10px;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        color: $fontColor02;
+                        text-decoration: none;
+
+                    }
+                }
+                .nav__link .dropdown {
+                    display: none;
+                    .dropdown-menu{
+                       .dropdown-item{
+                        display: flex;
+                       }
+                    }
+                }
+        }
+    }
+   
+}
