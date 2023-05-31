@@ -1,0 +1,69 @@
+.block__destaque{
+    width: 100%;
+    
+    // height: content;
+    padding: 10px 35px;
+    
+    .container__dinamico{
+        display: flex;
+        justify-content: center;
+        min-height: fit-content;
+        overflow: hidden;
+        margin-top: 5em;
+
+
+        
+        .content__dinamico{
+            background-color: rgba(255,255,255, 1);
+            height: auto    ;
+            padding: 1.6em;
+            border-radius: .4em;
+                .title__dinamico{
+                    font-size: 2.4em;
+                    color: $fontColor03;
+                    margin-top: 1.5em;
+                }
+                .title__dinamico__destaque{
+                    font-size: 3em;
+                    color: $fontColor02;
+                    margin-top: .5em;
+                }
+                .paragrafo__dinamico{
+                    font-size: 2em;
+                    font-weight: 400;
+                    font-family: 'Rubik', sans-serif;
+                    margin-top: 1.5em;
+                }
+            
+                .btn__accordion{
+                    display: flex;
+                    margin-top: 1.5em;
+                    width: 100%;
+                    height: auto;
+                        button{
+                            background-color: #ff6854;
+                            border-radius: 4px;
+                            border: none;
+                            margin-bottom: 0;
+                            padding: 20px 10px;
+                            font-family: 'Rubik',sans-serif;
+                            font-size: 16px;
+                            color: #fff;
+                            font-weight: 500;
+                            cursor: pointer;
+                        }
+                }
+          
+
+        }
+        .content__img__dinamico{
+            overflow: hidden;   
+            // height: 100%;
+            object-fit: cover;
+    
+        }
+    }
+   
+
+
+}

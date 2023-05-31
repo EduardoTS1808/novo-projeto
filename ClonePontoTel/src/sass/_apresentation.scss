@@ -1,0 +1,96 @@
+// @import 'reset';
+
+.block__apresentation{
+    width: 100%;
+    display: inline-flex;
+    padding: 10px 35px;
+    justify-content: center;
+   
+     .container{
+         display: flex;
+         align-content: center;
+         flex-wrap: nowrap;   
+
+        
+
+                 .container__block{
+                     max-width: 54em;
+                     flex-wrap: nowrap;
+                     height: fit-content;
+                    h1{
+                     color: $fontColor02;
+                     font-size: 3.2em; 
+                     margin: 2em 0 1em;
+                 
+                     }
+                     p{
+             
+                         font-size: 1.8em; 
+                     }
+                     .block__btnDemo{
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: flex-start;
+                            display: flex;
+                            margin: 2em 0 1em;  
+                                .block__button{
+                                    background-color: #ff6854;
+                                    border-radius: 4px;
+                                    margin-bottom: 0;
+                                    padding: 20px 10px;
+                                    font-family: Rubik,sans-serif;
+                                    font-size: 16px;
+                                    color: #fff;
+                                    font-weight: 500;
+                                    cursor: pointer;
+                                }
+                              
+                          
+                        }
+                    
+                     }
+                     .tour{
+                        width: fit-content;
+                        display: flex;
+                        align-items: center;
+                        padding: .5em;
+                        cursor: pointer;
+                        border-radius:.5em;
+                        margin: 2em 0 1em;
+                        &:hover{
+                            border: .2em solid rgba(0,0,0, .5);
+                            box-shadow: 7px 12px 14px rgba(255,104,84,.2);
+                        }
+                        //     svg{
+                        //     font-size: 4em;
+                        //     // color: #54e5ee;
+                        //     // margin-right: .5em;
+                        // }
+                            p{
+                                padding: 1em;
+                                max-width: 55%;
+                                font-size: 1.5em;
+                                align-items:center ;
+                                margin: 0;
+                            }
+                   
+                       
+                     }
+                    
+                 }
+                 .container-image{
+
+                     max-width: 54em;
+                     height: fit-content;
+                     vertical-align: middle;
+                     display: inline-block;
+
+                     img{
+                        max-width: 100%;
+                     }
+                 }
+
+ 
+ 
+    
+ }

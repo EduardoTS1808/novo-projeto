@@ -1,0 +1,101 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    align-items: center;
+    background: #eee;
+    border-radius: 5px;
+    .logo{
+        display: flex;
+        font-size: 3em;
+        align-items: center;
+       
+    }
+
+    .navbar{
+       display: flex;
+       height: 60px;
+       padding: 1rem 0;
+       .btnMenu{
+        display: none;
+       }
+        .navbar__list{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            text-decoration: none;
+                .navbar__link{
+                    // display: flex;
+                    display: block;
+                    padding: 1em ;
+                  
+                    .navbar__link__a{
+                        padding: 0 12px;
+                        display: block;
+                        font-family: 'rubik', sans-serif;
+                        font-size: 1.5em;
+                        font-weight: 600;
+                        color: #2D3F51;
+                        text-decoration: none;
+                        width:content;
+                        cursor: pointer;
+                      &:hover{
+                        color:  #ff6854;;
+                      }
+                     
+                    }
+
+                    }
+                    &:hover .dropdown__menu  {
+                        display: block;
+                        
+                    }
+
+                    // dropdown hover lista
+                    .dropdown__menu {
+                        display: none;                  //mudar para block
+                        list-style: none;
+                        padding: 1rem;
+                      
+                        height: max-content;
+                        background: #eee;
+                        
+                        
+                        li{
+                            
+                            align-items: center;
+                            text-align: center;
+                            display: none;
+                            position: relative;
+                            width: 100%;
+                            padding: 12px 0;
+                            margin-bottom: 12px;
+                               
+                            a{
+                                position: absolute;
+                                display: block;
+                                text-decoration: none; 
+                                font-family:$fontFamily;
+                                font-size: 1.2em;
+                                font-weight: 500;
+                                color: $fontColor03;
+                                padding-bottom: 1rem ;
+                                
+
+
+                              
+
+                           }
+                    }
+                    &:hover  .dropdown__menu  {
+                        display: block;
+                        
+                    }
+                    
+
+                }
+                
+        }
+    }
+   
+}

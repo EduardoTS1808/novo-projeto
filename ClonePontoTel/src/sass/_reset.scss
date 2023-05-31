@@ -5,7 +5,17 @@
     margin: 0;
 
 }
+@viewport{
+    width: device-width;
+    zoom: 1;
+
+}
 html{
     background: $backgroundPrincipal;
     font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
 }
+body{
+    padding: 1em 5%;
+}
+
