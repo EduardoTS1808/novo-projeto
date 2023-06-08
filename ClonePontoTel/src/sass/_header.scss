@@ -1,7 +1,6 @@
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 0 5px;
     align-items: center;
     background: #eee;
     border-radius: 5px;
@@ -16,24 +15,41 @@
        display: flex;
        height: 60px;
        padding: 1rem 0;
-       .btnMenu{
+
+      
+       #btnMenubar{
         display: none;
+        font-size: 4rem;
+        background: none;
+        border: none;
+        margin-right: 1.5rem;
+        cursor: pointer;
+            &.active{
+                color: #ff6854;
+
+            }
+            @media (max-width: 867px){
+                display: flex;  
+              }
        }
         .navbar__list{
             display: flex;
             justify-content: space-between;
             text-align: center;
             text-decoration: none;
+            &.active{
+                display: flex;
+                }
                 .navbar__link{
-                    // display: flex;
+                    display: flex;
                     display: block;
-                    padding: 1em ;
+                    padding: .5em ;
                   
                     .navbar__link__a{
-                        padding: 0 12px;
+                        padding: 0 8px;
                         display: block;
                         font-family: 'rubik', sans-serif;
-                        font-size: 1.5em;
+                        font-size: 1.2em;
                         font-weight: 600;
                         color: #2D3F51;
                         text-decoration: none;
@@ -47,7 +63,7 @@
 
                     }
                     &:hover .dropdown__menu  {
-                        display: block;
+                        display: none;
                         
                     }
 
@@ -82,7 +98,10 @@
                                 padding-bottom: 1rem ;
                                 
 
-
+                                &:hover{
+                                    // color:  #ff6854;
+                                    color: #eee;
+                                  }
                               
 
                            }
@@ -94,7 +113,9 @@
                     
 
                 }
-                
+                @media (max-width: 867px){
+                  display: none;  
+                }
         }
     }
    

@@ -8,7 +8,7 @@
                 justify-content: center;  //repetido
                     h2{
                         font-family: 'Rubik', serif;
-                        font-size: 2em;
+                        font-size: 1.5em;
                         font-weight: 500;
                         color: $fontColor02;
                     }
@@ -16,15 +16,15 @@
     }
     .review__usuarios{
        margin-top: 2em;
-        .container-review{
+       .container-review{
+            
             max-width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            // display: ;
+            // display: flex;
+            // flex-wrap: wrap;
 
             .logos-empresas{
-          
                 display: flex;
+                flex-wrap: wrap;
                 width: 100%;
                 margin-top: 20px;
                 margin-right: 0;
@@ -32,10 +32,9 @@
                 justify-content: center;
                 align-items: center;
                 img{
+
                     width: 100px;
-                    max-width: 100%;
-                    margin-right: 18px;
-                    margin-left: 18px;
+                    margin: 0 18px;
                     padding-right: 0;
                 }
               
@@ -46,18 +45,10 @@
        
     }
     .review__comentarios{
-        max-width: 100%;
+        width: 100%;
         margin-top: 2em;
-        padding: 0 7%;
-        flex: wrap;
-        gap: 1  100%;
        img{
             width: 100%;
-                display: inline-block;
-                height: 15em;
-                // margin-right: 18px;
-                // margin-left: 18px;
-                // padding-right: 0;
        }
     }
 }

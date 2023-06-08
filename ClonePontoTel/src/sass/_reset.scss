@@ -14,8 +14,28 @@ html{
     background: $backgroundPrincipal;
     font-size: 62.5%;
     font-family: 'Rubik', sans-serif;
+    @media (max-width: 867px){
+        font-size: 55%;
+      }
+    @media (max-width: 650px){
+        font-size: 50%;
+      }
 }
 body{
     padding: 1em 5%;
+    &.active{
+
+        background-color: black;
+    }
+    @media (max-width: 650px){
+        padding: 0%;
+      }
+
+      section{
+        padding: 1rem 3.5rem;
+        @media (max-width: 650px){
+            padding: 1rem;
+          }
+      }
 }
 

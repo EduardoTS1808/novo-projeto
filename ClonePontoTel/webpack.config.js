@@ -18,8 +18,8 @@ module.exports = {
                 test: /\.(sa|c|sc)ss$/i, 
                 use: [
                     MiniCssExtract.loader,
-                    'css-loader',
-                    'sass-loader'
+                    'css-loader'
+                    // 'sass-loader'
                 ]
             },
             {
@@ -46,7 +46,7 @@ module.exports = {
                     {
                         loader: 'url-loader',
                         options: {
-                            limit: 8192,
+                            limit: 8192
                         }
                     },
                 ],
@@ -59,10 +59,10 @@ module.exports = {
             {
                 test: /\.(eot|svg|ttf|woff|woff2?)$/,
                 use: {
-                    loader: 'file-loader'
-                //     , options: {
-                //         name: '../css/fonts/[name]-[hash:8].[ext]'
-                //     }
+                    loader: 'file-loader',
+                    options: {
+                        name: '../css/fonts/[name]-[hash:8].[ext]'
+                    }
                 }
             }
         ]
